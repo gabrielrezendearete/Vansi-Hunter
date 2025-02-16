@@ -481,7 +481,7 @@ header a:hover {
     outline: none;
     transition: background-color 0.4s;
     font-size: 16px;
-    margin: 0.5em;
+    margin: 0.5em 0;
 }
 
 .accordion:hover, .accordion.active {
@@ -504,9 +504,16 @@ header a:hover {
         flex-wrap: wrap;
         flex-direction: column;
         gap: 0.5em;
+        padding: 0;
     }
 
-    #diferenciais .container-2 .conteudo, #diferenciais .container-2 .accordion {
+    #diferenciais .container-2 .conteudo, #diferenciais .container-2 .acordeao {
+        width: 100%;
+        margin: 0;
+    }
+
+    .accordion {
+        text-align: center;
         width: 100%;
     }
 }
@@ -638,4 +645,17 @@ header a:hover {
     padding: 1em;
     text-align: center;
     font-size: 1em;
+}
+
+@media (max-width: 768px) {
+    .rodape-div-1-coluna {
+        justify-content: center;
+        gap: 0;
+    }
+
+    .rodape-div-4-coluna {
+        gap: 0;
+        justify-content: center;
+        margin-right: auto;
+    }
 }
