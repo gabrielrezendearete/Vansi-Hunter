@@ -201,6 +201,7 @@ header a:hover {
         background: #c5440e;
         transition: 0.3s;
         padding-top: 60px;
+        z-index: 10;
     }
 
     .off-canvas a {
@@ -636,7 +637,7 @@ header a:hover {
     background-image: url('../images/background-contato.png');
     background-size: cover;
     background-attachment: fixed;
-    background-position: center;
+    background-position: right;
     height: 100vh;
     display: flex;
     justify-content: center;
