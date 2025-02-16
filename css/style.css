@@ -240,6 +240,10 @@ header a:hover {
     #historia .container-2 .conteudo, #historia .container-2 .imagem {
         width: 100%;
     }
+
+    #historia h2 {
+        text-align: center;
+    }
 }
 
 /* Missão, Visão e Valores */
@@ -328,6 +332,18 @@ header a:hover {
 
     .flip-card {
         height: 35em;
+    }
+
+    .flip-card:hover .flip-card-inner {
+        transform: none;
+    }
+
+    .flip-card .flip-card-inner {
+        transition: transform 0.6s;
+    }
+
+    .flip-card.active .flip-card-inner {
+        transform: rotateY(180deg);
     }
 }
 
@@ -437,12 +453,12 @@ header a:hover {
         padding: 0 4em;
     }
 
-    #variedades .conteudo h1 {
-        font-size: 3em;
+    .carousel-slide h1 {
+        font-size: 2.5em;
     }
 
-    #variedades .conteudo p {
-        font-size: 1.1em;
+    .carousel-slide p {
+        font-size: 0.8em;
         margin-top: 0.5em;
     }    
 }
@@ -513,6 +529,11 @@ header a:hover {
     #diferenciais .container-2 .conteudo, #diferenciais .container-2 .acordeao {
         width: 100%;
         margin: 0;
+    }
+
+    #diferenciais .conteudo h2 {
+        text-align: center;
+        font-size: 2.5em;
     }
 
     .accordion {
@@ -651,14 +672,30 @@ header a:hover {
 }
 
 @media (max-width: 768px) {
-    .rodape-div-1-coluna {
+    .rodape-div {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .rodape-div-1, .rodape-div-4 {
         justify-content: center;
-        gap: 0;
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .rodape-div-1-coluna {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 
     .rodape-div-4-coluna {
-        gap: 0;
+        display: flex;
         justify-content: center;
-        margin-right: auto;
+    }
+
+    .rodape-div-4 button {
+        margin: 0 5px;
     }
 }

@@ -1,8 +1,87 @@
+/* Botões */
+
+document.addEventListener("DOMContentLoaded", function () {
+  const links = document.querySelectorAll("a[href^='#']");
+
+  links.forEach(link => {
+      link.addEventListener("click", function (event) {
+          event.preventDefault();
+
+          const destino = document.querySelector(this.getAttribute("href"));
+          if (destino) {
+              destino.scrollIntoView({ behavior: "smooth" });
+          }
+      });
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const botoes = document.querySelectorAll(".botao-contato");
+
+  botoes.forEach(botao => {
+      botao.addEventListener("click", function () {
+          const destino = document.querySelector("#contato");
+          if (destino) {
+              destino.scrollIntoView({ behavior: "smooth" }); 
+          }
+      });
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const botoes = document.querySelectorAll(".botao-instagram");
+
+  botoes.forEach(botao => {
+      botao.addEventListener("click", function () {
+          window.location.href = "https://www.instagram.com/vansi_hunter/";
+      });
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const botoes = document.querySelectorAll(".botao-whatsapp");
+
+  botoes.forEach(botao => {
+      botao.addEventListener("click", function () {
+          window.location.href = "https://api.whatsapp.com/send/?phone=5535991489620&text=Ol%C3%A1+gostaria+de+mais+informa%C3%A7%C3%B5es&type=phone_number&app_absent=0";
+      });
+  });
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const botoes = document.querySelectorAll(".botao-saiba-mais");
+
+  botoes.forEach(botao => {
+      botao.addEventListener("click", function () {
+          const destino = document.querySelector("#sobre");
+          if (destino) {
+              destino.scrollIntoView({ behavior: "smooth" }); 
+          }
+      });
+  });
+});
+
 /* Menu */
 
 function toggleMenu() {
   document.getElementById('menu').classList.toggle('open');
 }
+
+/* Flip Card */
+
+document.addEventListener("DOMContentLoaded", function () {
+  const cards = document.querySelectorAll(".flip-card");
+
+  cards.forEach(card => {
+      card.addEventListener("click", function () {
+          if (window.innerWidth <= 768) {
+              this.classList.toggle("active");
+          }
+      });
+  });
+});
+
 
 /* Carrossel da Seção Variedades */
 
