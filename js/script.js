@@ -93,6 +93,18 @@ function toggleMenu() {
   document.getElementById('menu').classList.toggle('open');
 }
 
+// Fecha o menu ao clicar em um link ou botão dentro do menu
+document.addEventListener("DOMContentLoaded", function () {
+  // Seleciona links e botões dentro do menu
+  const menuItems = document.querySelectorAll("#menu a, #menu button");
+
+  menuItems.forEach(item => {
+      item.addEventListener("click", function () {
+          document.getElementById('menu').classList.remove('open'); // Fecha o menu
+      });
+  });
+});
+
 /* Flip Card */
 
 document.addEventListener("DOMContentLoaded", function () {

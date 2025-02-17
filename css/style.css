@@ -7,6 +7,11 @@
     box-sizing: border-box;
 }
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 button {
     color: #ffffff;
     background-color: #c5440e;
@@ -461,7 +466,7 @@ header a:hover {
     align-items: center;
     color: #fff;
     transition: left 0.5s ease-in-out;
-    background-image: url('../images/dachshund-4.png');
+    background-image: url('../images/dachshund-6.png');
     background-size: cover;
     background-attachment: fixed;
 }
@@ -473,7 +478,7 @@ header a:hover {
 }
 
 .carousel-slide:nth-child(3) {
-    background-image: url('../images/dachshund-6.png');
+    background-image: url('../images/dachshund-4.png');
     background-size: cover;
     background-attachment: fixed;
 }
@@ -482,7 +487,7 @@ header a:hover {
     left: 0;
 }
 
-.carousel-slide h1 {
+.carousel-slide h2 {
     font-weight: bolder;
     font-size: 4.5em;
     line-height: 1;
@@ -542,7 +547,7 @@ header a:hover {
         padding: 0 2em;
     }
 
-    .carousel-slide h1 {
+    .carousel-slide h2 {
         font-size: 2.5em;
     }
 
@@ -647,7 +652,7 @@ header a:hover {
     padding: 0 4em;
 }
 
-#contato .conteudo h1 {
+#contato .conteudo h2 {
     font-weight: bolder;
     font-size: 4.5em;
     line-height: 1;
@@ -669,7 +674,7 @@ header a:hover {
         background-attachment: scroll;
     }
 
-    #contato .conteudo h1 {
+    #contato .conteudo h2 {
         font-size: 3em;
     }
 
